@@ -8,6 +8,8 @@ on:
         default: 'warning'
       tags:
         description: 'Test scenario tags'
+      test:
+        description: 'Something new'
 jobs:
   printInputs:
     runs-on: ubuntu-latest
