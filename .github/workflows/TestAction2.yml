@@ -8,6 +8,8 @@ on:
         default: 'warning'
       tags:
         description: 'Test scenario tags'
+      test:
+        description: 'Something new'
 jobs:
   printInputs:
     runs-on: ubuntu-latest
@@ -15,3 +17,4 @@ jobs:
     - run: |
         echo "Log level: ${{ github.event.inputs.logLevel }}"
         echo "Tags: ${{ github.event.inputs.tags }}"
+        echo "This is a change that should be seen"
